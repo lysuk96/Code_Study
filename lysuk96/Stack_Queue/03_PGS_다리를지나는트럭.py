@@ -1,4 +1,6 @@
 #다리를 지나는 트럭
+#1트 : sum 이 O(N)이어서 테케 5번 시간초과 실패 -> 즉각반영 O(1)로 바꿔줌
+
 from collections import deque
 def solution(bridge_length, weight, truck_weights):
     Q = deque(truck_weights)
