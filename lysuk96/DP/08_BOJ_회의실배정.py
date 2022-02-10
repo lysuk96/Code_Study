@@ -1,4 +1,7 @@
 #https://www.acmicpc.net/problem/1931
+# 1트 실패 : 회의시간 짧다고 best가 아님
+# 2트 : 끝나는 시간 정렬
+
 N = int(input())
 candidate = []
 for i in range(N):
