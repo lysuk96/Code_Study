@@ -7,8 +7,6 @@ visit = [False]*(N+1)
 
 q = deque(list(map(int, input().split(" "))))
 q.popleft()
-# for t in truth:
-#     visit[t] = True
 
 tree = defaultdict(set)
 party_set = []
@@ -20,11 +18,14 @@ for _ in range(M):
         tree[x].add(y)
         tree[y].add(x)
 
+for i in q:
+    visit[i] = True
+
 while q:
     tmp = q.popleft()
-    visit[tmp] = True
     for t in tree[tmp]:
         if not visit[t]:
+            visit[t] = True
             q.append(t)
 
 # print(tree)
