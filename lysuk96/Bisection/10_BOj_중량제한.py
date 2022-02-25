@@ -23,7 +23,7 @@ for _ in range(M):
 start, end = map(int, input().split(" "))
 answer = 0
 
-lo, hi = 0, 1000000000
+lo, hi = 0, 1000000001
 while lo < hi:
     mid = (lo + hi) // 2
     if is_promising(mid):
