@@ -1,5 +1,5 @@
 # https://www.acmicpc.net/problem/1726
-# 여러가지 경로중 min값을 찾아야함!
+# 여러가지 경로중 min값을 찾아야함!!
 # 1트 실패 : visit을 boolean으로 해서
 # 2트 실패 : 마지막 목표지점은 꼭 q에 넣어줘야함 41번줄 조건 필요
 from collections import deque
